@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Match Challenge</title>
+    <link rel="icon" href="/assets/images/card-games.png" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <div id="game-container">
+      <h1 id="game-title">Memory Match Challenge</h1>
+
+      <div id="stats-panel">
+        <div id="level-display">Level: 1</div>
+        <div id="score-display">Score: 0</div>
+        <div id="timer">Time: 00:00</div>
+      </div>
+
+      <div id="game-board"></div>
+
+      <div id="start-screen" class="overlay active">
+        <h2>Memory Match Challenge</h2>
+        <p>Match pairs of cards to complete each level</p>
+        <div id="level-select">
+          <button data-level="1">Level 1</button>
+          <button data-level="2">Level 2</button>
+          <button data-level="3">Level 3</button>
+          <button data-level="4">Level 4</button>
+        </div>
+      </div>
+
+      <div id="level-complete" class="overlay">
+        <h2>Level Complete!</h2>
+        <div class="star-rating"></div>
+        <p>Time: <span id="level-time">00:00</span></p>
+        <p>Score: <span id="level-score">0</span></p>
+        <button id="next-level">Next Level</button>
+        <button id="level-menu">Level Menu</button>
+      </div>
+
+      <div id="game-complete" class="overlay">
+        <h2>Game Complete!</h2>
+        <p>Congratulations! You've completed all levels!</p>
+        <p>Final Score: <span id="final-score">0</span></p>
+        <p>Total Time: <span id="total-time">00:00</span></p>
+        <button id="play-again">Play Again</button>
+      </div>
+
+      <div id="copyright">
+        © 2025 Memory Match Challenge - Hasindu Udara. All rights reserved.
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
